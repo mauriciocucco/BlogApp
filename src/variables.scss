@@ -1,12 +1,10 @@
 // VARIABLES
-
 $header-height: 58px;
 $footer-height: 82.8px;
 $content-height: calc(100vh - $header-height - $footer-height);
 $container-padding: 30px;
 
 // MIXINS
-
 @mixin flex-center {
   align-items: center;
   display: flex;
