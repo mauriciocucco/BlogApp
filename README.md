@@ -1,16 +1,8 @@
 # BlogApp
 
-A very simple blog app that uses **Angular** and **Scully** (https://scully.io/docs/learn/overview/#how-does-it-work), a static site generator that uses the **Jamstack** architecture (https://jamstack.org/what-is-jamstack/).
+A very simple blog app that uses **Angular**, **Scully** (https://scully.io/docs/learn/overview/#how-does-it-work), a static site generator that uses the **Jamstack** architecture (https://jamstack.org/what-is-jamstack/) and PrimeNG (https://www.primefaces.org/primeng/).
 
 ## Installation
-
-### Angular 12 or below
-
-```bash
-    npm install
-```
-
-### Angular 13 or above
 
 Because Scully doesn't support Angular 13 or above yet, you have to use the --legacy-peer-deps flag:
 
