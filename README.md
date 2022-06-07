@@ -1,27 +1,43 @@
 # BlogApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+A very simple blog app that uses **Angular** and **Scully** (https://scully.io/docs/learn/overview/#how-does-it-work), a static site generator that uses **Jamstack** (https://jamstack.org/what-is-jamstack/).
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Angular 12 or below
 
-## Code scaffolding
+```bash
+    npm i
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Angular 13 or above
 
-## Build
+Because Scully doesn't support Angular 13 or above yet, you have to use the --legacy-peer-deps flag:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+    npm install --legacy-peer-deps
+```
 
-## Running unit tests
+## How to run it locally
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Write down the next command:
 
-## Running end-to-end tests
+### Angular 12 or below
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+    ng add @scullyio/init
+```
 
-## Further help
+### Angular 13 or above
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+    npx ng g @scullyio/init:ng-add --renderer puppeteer
+```
+
+After that, you can run the app with the following commands:
+
+```bash
+    ng build
+    npm run scully
+    npm run scully:serve
+```
