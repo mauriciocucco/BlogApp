@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { ArticlesRoutingModule } from './articles-routing.module';
 import { IndexComponent } from './pages/index/index.component';
-
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
-  declarations: [
-    IndexComponent
-  ],
-  imports: [
-    CommonModule,
-    ArticlesRoutingModule
-  ]
+  declarations: [IndexComponent],
+  imports: [ArticlesRoutingModule, SharedModule],
 })
-export class ArticlesModule { }
+export class ArticlesModule {}

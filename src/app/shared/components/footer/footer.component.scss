@@ -1,5 +1,8 @@
+@import "/src/variables.scss";
+
 footer {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(224, 42, 45, 0.2);
   backdrop-filter: blur(3px);
   border: 1px solid #e5e5e5;
+  height: $footer-height;
 }

@@ -1,1 +1,13 @@
-<p>index works!</p>
+<div class="centered section-height">
+  <div class="wrap-row">
+    <p-card
+      *ngFor="let post of posts"
+      [routerLink]="post.route"
+      styleClass="p-card-shadow"
+    >
+      <h3>{{ post.title }}</h3>
+      <hr />
+      <p>{{ post["description"] }}</p>
+    </p-card>
+  </div>
+</div>

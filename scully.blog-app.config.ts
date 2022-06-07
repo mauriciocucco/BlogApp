@@ -7,10 +7,10 @@ export const config: ScullyConfig = {
   outDir: './dist/static', // directory for scully build artifacts
   defaultPostRenderers: [],
   routes: {
-    '/blogapp/:id': {
+    '/posts/:id': {
       type: 'contentFolder',
       id: {
-        folder: "./blogapp"
+        folder: "./mdfiles"
       }
     },},
 };
