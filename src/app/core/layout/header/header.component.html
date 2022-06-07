@@ -1,1 +1,5 @@
-<p-menubar id="header" [model]="items"></p-menubar>
+<p-menubar id="header" [model]="items">
+  <ng-template pTemplate="start">
+    <img src="assets/angular-logo.png" height="40" class="mr-2" />
+  </ng-template>
+</p-menubar>
